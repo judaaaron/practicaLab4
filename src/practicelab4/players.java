@@ -2,7 +2,7 @@
 package practicelab4;
 
 
-public abstract class players extends teams {
+public abstract class players  {
     private String name, apodo, futFav, basquetFav, favPlayer, mayorEdad, nacimiento;
     private int numCamisa, numEstrellas;
 
@@ -10,8 +10,7 @@ public abstract class players extends teams {
         super();
     }
 
-    public players(String name, String apodo, String futFav, String basquetFav, String favPlayer, String mayorEdad, String nacimiento, int numCamisa, int numEstrellas, String nombre, String estadio, String pais, String entrandor, String duenio, String masco, String fecha, String color) {
-        super(nombre, estadio, pais, entrandor, duenio, masco, fecha, color);
+    public players(String name, String apodo, String futFav, String basquetFav, String favPlayer, String mayorEdad, String nacimiento, int numCamisa, int numEstrellas) {
         this.name = name;
         this.apodo = apodo;
         this.futFav = futFav;
@@ -22,6 +21,8 @@ public abstract class players extends teams {
         this.numCamisa = numCamisa;
         this.numEstrellas = numEstrellas;
     }
+
+  
 
     public String getName() {
         return name;
@@ -100,11 +101,10 @@ public abstract class players extends teams {
         return  super.toString() + "players{" + "name=" + name + ", apodo=" + apodo + ", futFav=" + futFav + ", basquetFav=" + basquetFav + ", favPlayer=" + favPlayer + ", mayorEdad=" + mayorEdad + ", nacimiento=" + nacimiento + ", numCamisa=" + numCamisa + ", numEstrellas=" + numEstrellas + '}';
     }
     
-    
-    
-    
-    
-    
-    
+    /**
+     *
+     * @return
+     */
+    public abstract double atacar();
     
 }
